@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+  /* display: block; */
+  margin: 0 auto;
+}
+nav {
+  text-align: center;
+  border-radius: 2rem;
+  border: 2px solid #333;
+  margin: 2rem 0;
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 7rem;
+}
+
+h1 {
+  background-color: gold;
+  border-radius: 1.9rem 1.9rem 0 0;
+}
+
+li {
+  border-top: 2px solid #333;
+}
+
+li:last-child a {
+  border-radius: 0 0 1.9rem 1.9rem;
+}
+a {
+  text-decoration: none;
+
+  color: #333;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  background-color: black;
+  color: #fff;
+}
