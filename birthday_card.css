@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+main {
+  margin: 80px 0 0 400px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 500px;
+  margin: 10px;
+  transition:
+    transform 0.3s,
+    background-color 0.3s ease;
+}
+h1,
+h2,
+p,
+a {
+  padding-bottom: 20px;
+}
+.card:hover {
+  transform: scale(1.1);
+  background-color: yellow;
+}
+h1::after {
+  content: " 🎉";
+}
+h1::before {
+  content: "🎂 ";
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding: 13px;
+}
+.card a:hover {
+  background-color: orange;
+}
+
+.card a:active {
+  background-color: blueviolet;
+}
+
+.card a:focus {
+  outline: 2px solid yellowgreen;
+}
+
+section {
+  display: inline-block;
+  justify-content: center;
+  display: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+section:target {
+  display: block;
+}
+
+section:hover {
+  transform: skewX(7deg);
+}
