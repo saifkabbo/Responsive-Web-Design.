@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto 0 25px;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  display: inline;
+}
+
+h1,
+p {
+  padding-left: 13px;
+}
+header {
+  padding-left: 45%;
+}
+hr {
+  width: 1000vw;
+  margin: 20px;
+}
+
+section {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  margin-left: 25px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
