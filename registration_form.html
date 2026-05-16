@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration_form.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Registration Form</h1>
+      <p>Please fill out this form with the required Information</p>
+    </div>
+    <form action="www.google.com" method="post">
+      <hr />
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="first-name"
+          >Enter your First Name:
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            required
+            placeholder="Abu"
+          />
+        </label>
+        <label for="last-name"
+          >Enter your Last Name:
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            required
+            placeholder="Saif"
+          />
+        </label>
+
+        <label for="email"
+          >Enter Your Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="saif@email.com"
+          />
+        </label>
+        <label for="password"
+          >Enter Your Password:
+          <input
+            type="password"
+            id="password"
+            pattern="[a-zA-Z0-9]{8,24}"
+            required
+          />
+        </label>
+      </fieldset>
+
+      <fieldset class="inline">
+        <legend>Account Information (Required!)</legend>
+        <label for="personal">
+          <input type="radio" id="personal" name="account-type" />
+          Personal
+        </label>
+        <label for="business">
+          <input type="radio" id="business" name="account-type" />
+          Business
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label>
+          Upload Your Profile Picture:
+          <input type="file" />
+        </label>
+        <label for="age">
+          Enter Your Age:(18-100)
+          <input type="number" id="age" name="age" min="18" max="100" />
+        </label>
+        <label for="country"
+          >Select Your Country:
+          <select id="country" name="country">
+            <option value="">--Please choose an option--</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+          </select>
+        </label>
+        <label for="referrer">
+          How did you hear about us?
+          <select name="referrer" id="referrer">
+            <option value="">--Please choose an option--</option>
+            <option value="friend">Friend</option>
+            <option value="social_media">Social Media</option>
+            <option value="search_engine">Search Engine</option>
+            <option value="advertisement">Advertisement</option>
+          </select>
+        </label>
+        <label for="bio">
+          Tell us about yourself:
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            cols="50"
+            placeholder="I like coding on a beach..."
+          ></textarea>
+        </label>
+        <a href="www.google.com"><b>Read our Terms and Conditions</b></a>
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I accept the Terms and Conditions.
+        </label>
+      </fieldset>
+      <input type="submit" class="btn" value="Register" />
+    </form>
+  </body>
+</html>
