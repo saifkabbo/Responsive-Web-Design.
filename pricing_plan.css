@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 20px auto;
+  height: 900px;
+  width: 600px;
+  background-color: lightyellow;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 5px solid lightcoral;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  /* background: #000; */
+}
+.border {
+  border-bottom: 1px solid lightblue;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid lightblue;
+  padding: 20px;
+  min-height: 300px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.pricing-card:hover {
+  transform: translate(3px, 3px) scale(1.1);
+  background-color: lightgreen;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.basic-plan {
+  order: 0;
+  display: block;
+}
+
+.pro-plan {
+  order: 1;
+  display: block;
+}
+
+.premium-plan {
+  display: block;
+  order: 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+  transition: background-color 0.3s ease;
+  transform: translate(2px, 2px) scale(1.1);
+}
+
+span {
+  color: red;
+}
